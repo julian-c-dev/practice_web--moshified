@@ -40,7 +40,7 @@ p {
 }
 
 @media screen and (min-width: 1204px) {
-  body-size {
+  body {
     font-size: 1.8rem;
   }
   h1 {
