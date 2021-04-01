@@ -116,6 +116,34 @@ a {
   }
 }
 
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
+
 /*Icons*/
 .icon-container {
   background-color: #f3f9fa;
@@ -138,32 +166,48 @@ a {
 
 /*Buttons*/
 /*
+.container {
+  width: 200px;
+}
 .btn {
   border-radius: 30px;
   font-size: 2rem;
+  padding: 1rem 2rem;
+  width: 50%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
   font-weight: bold;
-  color: white;
+}
+
+.btn-block {
+  padding: 1rem 2rem;
+  width: 100%;
 }
 
 .btn--primary {
   background: var(--color-primary);
+  color: white;
 }
 
 .btn--secondary {
   background: var(--color-secondary);
+  color: white;
 }
 
 .btn--accent {
   background: var(--color-accent);
 }
 
-.btn--empty {
+.btn--outline {
   background: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: var(--color-headings);
+  border: 1px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: white;
+  border: 1px solid var(--color-headings);
 }
 */
