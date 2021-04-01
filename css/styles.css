@@ -115,3 +115,55 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/*Icons*/
+.icon-container {
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+/*Buttons*/
+/*
+.btn {
+  border-radius: 30px;
+  font-size: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+}
+
+.btn--accent {
+  background: var(--color-accent);
+}
+
+.btn--empty {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+*/
