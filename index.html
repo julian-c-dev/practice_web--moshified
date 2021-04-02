@@ -14,10 +14,26 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <button class="btn btn--accent btn--block">Get started</button>
-    <button class="btn btn--accent">Search</button>
-    <button class="btn btn--outline">Buy Now</button>
-    <button class="btn btn--secondary btn--block">Get started</button>
-    <button class="btn btn--primary">Buy Now</button>
+    <div class="input-group">
+      <input
+        type="text"
+        class="input"
+        placeholder="Enter domain name here..."
+      />
+      <button class="btn btn--accent">
+        <svg class="icon icon--small">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>
+        Search
+      </button>
+    </div>
+
+    <div>
+      <input
+        type="text"
+        class="input"
+        placeholder="Enter domain name here..."
+      />
+    </div>
   </body>
 </html>
