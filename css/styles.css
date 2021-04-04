@@ -1,3 +1,21 @@
+/*
+Index: 
+  > 1. Color Palette & Variables
+  > 2. All elements
+  > 3. Sections:
+    > a. Typography
+    > b. Links
+    > c. Badges
+    > d. Lists
+    > e. Icons
+    > f. Buttons
+    > g. Input
+    > h. Cards
+    > i. Plans 
+
+*/
+
+/*1. Color Palette & Variables*/
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -8,14 +26,15 @@
   --border-radius: 30px;
 }
 
+/*2. All Elements */
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
 
-/*Typography*/
-
+/*3. Sections: */
+/*a. Typography*/
 html {
   font-size: 62.5%;
 }
@@ -64,7 +83,7 @@ p {
   }
 }
 
-/*Links*/
+/*b. Links*/
 a {
   text-decoration: none;
 }
@@ -91,7 +110,7 @@ a {
   }
 }
 
-/*Badges*/
+/*c. Badges*/
 
 .badge {
   border-radius: 20px;
@@ -113,6 +132,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1204px) {
@@ -124,7 +144,7 @@ a {
   }
 }
 
-/* Lists */
+/*d. Lists */
 .list {
   list-style: none;
   padding-left: 0;
@@ -152,7 +172,7 @@ a {
   }
 }
 
-/*Icons*/
+/*e. Icons*/
 .icon-container {
   background-color: #f3f9fa;
   width: 64px;
@@ -177,9 +197,7 @@ a {
   fill: var(--color-primary);
 }
 
-/*Buttons*/
-
-/* Buttons */
+/*f. Buttons */
 .btn {
   border-radius: 40px;
   border: 0;
@@ -248,7 +266,7 @@ a {
   }
 }
 
-/* Input */
+/*g. Input */
 
 .input {
   border-radius: var(--border-radius);
@@ -285,7 +303,7 @@ a {
   }
 }
 
-/* Cards */
+/*h. Cards */
 
 .card {
   border-radius: 7px;
@@ -306,4 +324,55 @@ a {
 .card--secondary .card__header {
   background-color: var(--color-secondary);
   color: white;
+}
+
+.card--secondary .badge--secondary {
+  background-color: #02cdf1;
+}
+
+/*i. Plans*/
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-weight: 300;
+  font-size: 2.4rem;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
