@@ -320,6 +320,7 @@ a {
   border-radius: var(--border-radius);
   display: flex;
   margin-top: 2rem;
+  min-width: 40rem;
 }
 
 .input-group .input {
@@ -758,7 +759,6 @@ a {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
   margin: 4rem auto;
-  max-width: 770px;
 }
 
 .block-domain__prices {
