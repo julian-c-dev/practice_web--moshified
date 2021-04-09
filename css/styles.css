@@ -365,6 +365,20 @@ a {
 }
 
 /*9. Plans*/
+.plan {
+  transition: transform 0.2s ease-out;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -763,4 +777,19 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/*20. Plans Block*/
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.block-plans .grid--1x3 {
+  column-gap: 4rem;
 }
