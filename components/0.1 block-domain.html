@@ -1,0 +1,55 @@
+<section class="block container">
+  <header class="block__header">
+    <h2>Starting at $9 per month</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia commodi
+      odio
+    </p>
+  </header>
+  <div class="input-group block-domain">
+    <input type="text" class="input" placeholder="Enter domain name here..." />
+    <button class="btn btn--accent">
+      <svg class="icon icon--small icon--white">
+        <use xlink:href="images/sprite.svg#search"></use>
+      </svg>
+      Search
+    </button>
+  </div>
+  <ul class="list block-domain__prices">
+    <li><span class="badge badge--secondary">.com $9</span></li>
+    <li>.sg $10</li>
+    <li>.space $11</li>
+    <li>.info $14</li>
+    <li>.net $10</li>
+    <li>.xyz $10</li>
+  </ul>
+</section>
+
+<!--
+
+    /*19. Domain Block*/
+.block-domain {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 770px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+-->
