@@ -780,7 +780,6 @@ a {
 
 /*19. Domain Block*/
 .block-domain {
-  box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
   margin: 4rem auto;
   max-width: 670px;
@@ -866,11 +865,19 @@ a {
   }
 }
 
-/* 23. Block - Testimonials (empty) /*
+/* 23. Block - Testimonials */
+
+.testimonial {
+  margin-bottom: -100px;
+}
 
 /* 24. Block - Footer */
 .footer {
   background: #232323;
+}
+
+.footer__sections {
+  margin-top: 7rem;
 }
 
 .footer a {
@@ -947,4 +954,9 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* 25. Sign-up Callout */
+.callout-signup {
+  transform: translateY(8rem);
 }
