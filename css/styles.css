@@ -551,6 +551,7 @@ a {
 /*13. Testimonial */
 .testimonial {
   padding: 3rem;
+  margin-bottom: 200px;
 }
 
 .testimonial__image {
@@ -587,7 +588,7 @@ a {
 /*14. Callouts */
 .callout {
   padding: 4rem;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 .callout--primary {
   background: var(--color-primary);
@@ -869,7 +870,7 @@ a {
 /* 23. Block - Testimonials */
 
 .testimonial {
-  margin-bottom: -100px;
+  margin-bottom: 0;
 }
 
 /* 24. Block - Footer */
@@ -960,4 +961,10 @@ a {
 /* 25. Sign-up Callout */
 .callout-signup {
   transform: translateY(8rem);
+}
+
+@media screen and (max-width: 768px) {
+  .callout {
+    display: none;
+  }
 }
